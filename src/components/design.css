@@ -1,0 +1,81 @@
+.gradient-border {
+  border-image-slice: 20;
+  animation: border-color 10s ease-in 10s infinite;
+  border-image-source: linear-gradient(
+    140deg,
+    rgba(120, 62, 169, 0.8) 5%,
+    var(--background-color) 10% 90%,
+    rgba(169, 121, 84, 0.8) 95%
+  );
+}
+@keyframes border-color {
+  0% {
+    border-image-source: linear-gradient(
+      140deg,
+      #783ea9 5%,
+      var(--background-color) 10% 90%,
+      #a97954 95%
+    );
+  }
+  25% {
+    border-image-source: linear-gradient(
+      140deg,
+      #379747 5%,
+      var(--background-color) 10% 90%,
+      #574fa3 95%
+    );
+  }
+  50% {
+    border-image-source: linear-gradient(
+      140deg,
+      #379747 5%,
+      var(--background-color) 10% 90%,
+      #a97954 95%
+    );
+  }
+  75% {
+    border-image-source: linear-gradient(
+      140deg,
+      rgb(120, 62, 169) 5%,
+      var(--background-color) 10% 90%,
+      #379747 95%
+    );
+  }
+  100% {
+    border-image-source: linear-gradient(
+      140deg,
+      rgb(120, 62, 169) 5%,
+      var(--background-color) 10% 90%,
+      #379747 95%
+    );
+  }
+}
+
+.inner-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.left-container {
+  flex: 1 1 60%;
+}
+.right-container {
+  flex: 1 1 40%;
+}
+
+@media screen and (max-width: 800px) {
+  .inner-container {
+    row-gap: 20px;
+    height: max-content;
+    flex-direction: column;
+
+    margin: 80px 0 40px 0;
+  }
+  .left-container {
+    flex: 1;
+  }
+  .right-container {
+    flex: 1;
+  }
+}

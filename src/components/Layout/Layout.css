@@ -1,0 +1,42 @@
+.container {
+  height: calc(100vh - 130px);
+  width: calc(100vw - 30vw);
+  box-sizing: border-box;
+  margin: auto;
+  padding: auto;
+  border: 20px solid;
+  position: relative;
+}
+
+.icons {
+  position: absolute;
+}
+.logo-img {
+  height: 90px;
+  width: 90px;
+  filter: drop-shadow(0.5px 0.5px 2px rgb(106, 65, 147)) invert(70%);
+}
+.social-links {
+  top: 0;
+  opacity: 0.5;
+  right: 0;
+}
+.social-links svg {
+  font-size: xx-large;
+}
+
+@media screen and (max-width: 800px) {
+  .social-links {
+    bottom: 0;
+    align-items: flex-end;
+  }
+
+  .container {
+    width: 100vw;
+    height: max-content;
+    padding: 0 0 10px 15px;
+    border: 5px solid;
+    border-image-slice: 1;
+    overflow: scroll;
+  }
+}
