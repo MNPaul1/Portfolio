@@ -1,0 +1,15 @@
+{"projects": [
+    { "name": "Hostal Management System", "imgLink": "https://static.vecteezy.com/system/resources/previews/004/141/292/original/person-home-flat-cartoon-style-logo-concept-human-icon-in-house-man-silhouette-in-building-isolated-icon-on-black-background-vector.jpg", "description": "Created an application that allows user to keep track on hostellers & wardens information. \n Different responsibilities were given to admin & employees where, admin and employees have different permissions to alter the data of the system." },
+    { "name": "One Click Share", "imgLink": "https://www.logolynx.com/images/logolynx/54/54559077102b820e651b6d180a80f95b.jpeg", "description": "Designed frontend for an application where user can analyse their social media accounts and can share post to all the social media accounts in one click." },
+    { "name": "Password Manager", "imgLink": "https://miro.medium.com/max/1400/1*mfR2ls1FEYfece1vc2zWzA.png", "description": "A simple user-friendly application where users can store their passwords and can access to it anytime anywhere. Moreover, my application also give suggestions of strong passwords." },
+    { "name": "Currency Rate Converter", "imgLink": "https://c4.wallpaperflare.com/wallpaper/217/323/743/coins-saving-wallpaper-preview.jpg", "description": "Developed an application that allows user to compare the price of different currencies in real-time. Users can discover about any currency by double tapping, it will immediately redirect to a browser and open ups all the information related to the currency selected." }
+  ],
+  "Skills" : [{ "name": "Python", "subSkills":["Data Structures","Working with APIs", "OOPs","Tkinter", "Algorithns", "Flask Basics"]  },
+    { "name": "C++", "subSkills": ["Data Structures", "OOPs", "Algorithns","Pointers"]  },
+    { "name": "JavaScript", "subSkills": ["Types of Functions","Data Structures","DOM", "Loops"] },
+    { "name": "NodeJS", "subSkills": ["Asynchronous Functions","Working with APIs","EJS"] },
+    { "name": "ReactJS", "subSkills": ["Hooks","Asynchronous Functions", "Functional Components", "Props"] },
+    { "name": "ExpressJS", "subSkills":["Routing","Templating","Working with APIs"]  },
+    { "name": "HTML", "subSkills": ["Tags"] },
+    { "name": "CSS", "subSkills": ["Designing","Responsive Design"] }]
+  }

@@ -1,6 +1,6 @@
 .container {
   height: calc(100vh - 130px);
-  width: calc(100vw - 30vw);
+  width: calc(100vw - 35vw);
   box-sizing: border-box;
   margin: auto;
   padding: auto;
@@ -18,23 +18,29 @@
 }
 .social-links {
   top: 0;
-  opacity: 0.5;
+
   right: 0;
 }
-.social-links svg {
+.social-links a svg {
   font-size: xx-large;
+  cursor: pointer;
+  color: var(--color);
+  opacity: 0.5;
 }
-
-@media screen and (max-width: 800px) {
+.social-links a svg:hover {
+opacity: 1;
+transform: scale(1.1);
+}
+@media screen and (max-width: 900px) {
   .social-links {
     bottom: 0;
     align-items: flex-end;
   }
-
   .container {
     width: 100vw;
     height: max-content;
-    padding: 0 0 10px 15px;
+    min-height: 100vh;
+    padding: 0 0 10px 10px;
     border: 5px solid;
     border-image-slice: 1;
     overflow: scroll;

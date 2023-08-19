@@ -7,8 +7,7 @@
 
 :root{
   --background-color: #1d1d20;
-  /* --color: rgb(225, 225, 225); */
-  --color: white;
+  --color: rgb(225, 225, 225);
 }
 body{
   font-family: 'Montserrat', sans-serif;

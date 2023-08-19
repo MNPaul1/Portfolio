@@ -1,26 +1,52 @@
-.Navbar{
-    height: 60px;
-    text-align: center;
-    color: var(--color);
-    opacity: 0.7;
-    column-gap: 20px;
+.Navbar {
+  height: 60px;
+  text-align: center;
+  color: var(--color);
+  column-gap: 20px;
+  display: flex;
+  font-size: medium;
 }
 
-.Navbar a{
-    color: inherit;
-    text-decoration-thickness: 2px;
-    text-underline-position: under;
+.Navbar a {
+  color: var(--color);
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-position: under;
+  opacity: 0.7;
 }
 
-.Navbar .active{
-    color: var(--color);
-    transform: scale(1.1);
-    font-weight: 600;
-    text-decoration-color: rgb(120, 62, 169);
+.active {
+  transform: scale(1.17);
+  font-weight: 600;
+  opacity: 1;
+  text-decoration-color: rgb(120, 62, 169);
 }
-
-@media screen and (max-width:600px) {
-    .Navbar{
-        display: none;
-    }
+.menu-icon {
+  position: absolute;
+  right: 7px;
+  cursor: pointer;
+  top: 25px;
+  z-index: 2;
+  display: none;
+}
+#menu,
+#close {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .Navbar {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    background-color: var(--background-color);
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  #menu,
+  #close {
+    display: block;
+  }
 }
