@@ -4,7 +4,7 @@ export const Home = () => {
   return (
     <div className="inner-container">
       <div className="left-container center">
-        <h1 className="welcome-heading customized-heading-color">Welcome.</h1>
+        <h1 className="customized-heading-color" id="welcome-heading">Welcome.</h1>
         <p className="intro-description">
           I am Mahanandan, a proficient Front-End Developer located in
           Vancouver, British Columbia, Canada. My professional journey has

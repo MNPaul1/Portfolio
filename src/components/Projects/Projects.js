@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Projects.css";
 import data from "../../data.json";
+import LaunchIcon from '@mui/icons-material/Launch';
 export const Projects = () => {
   const { projects } = data;
   const [project, setProject] = useState(projects[0]);
@@ -51,7 +52,7 @@ export const Projects = () => {
               id={item.name}
               className={project.name === item.name ? "active" : ""}
             >
-              {item.name}
+              {item.name} <LaunchIcon onClick={() => {window.open(item.link, '_blank'); window.location.reload(false)}} />
             </nav>
           ))}
         </div>

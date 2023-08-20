@@ -12,7 +12,7 @@ export const Skills = () => {
   return (
     <div className="inner-container skills-container">
       <div className="left-container center" id="sub-skill-container">
-        <h1 className="customized-heading-color">{skill}</h1>
+        <h2 className="customized-heading-color">{skill}</h2>
         <div className="skill-level grid">
           {Skills.map(
             (item) =>
