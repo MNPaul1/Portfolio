@@ -7,12 +7,12 @@ export const Skills = () => {
   const [skill, setSkill] = useState("Python");
   const handleClick = (e) => {
     const { id } = e.target;
-    setSkill(id)
+    setSkill(id);
   };
   return (
     <div className="inner-container skills-container">
       <div className="left-container center" id="sub-skill-container">
-        <h2 className="customized-heading-color">{skill}</h2>
+        <h1 className="customized-heading-color">{skill}</h1>
         <div className="skill-level grid">
           {Skills.map(
             (item) =>
@@ -27,9 +27,14 @@ export const Skills = () => {
         <h1 className="customized-heading-color">skills</h1>
         <div className="skills grid center">
           {Skills.map((item, key) => (
-            <div key={key} onClick={handleClick} id={item.name}>
-              <nav id={item.name} className={skill===item.name?"active":""}>{item.name}</nav>
-            </div>
+            <nav
+              key={key}
+              onClick={handleClick}
+              id={item.name}
+              className={skill === item.name ? "active" : ""}
+            >
+              {item.name}
+            </nav>
           ))}
         </div>
       </div>

@@ -24,6 +24,7 @@ export const Layout = ({ page }) => {
           <LinkedIn />
         </Link>
       </div>
+      <footer>Design by: Mahanandan</footer>
     </div>
   );
 };

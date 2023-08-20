@@ -1,31 +1,31 @@
 .skill-level{
     height: fit-content;
+    text-align: center;
+
 }
 
-/* .skills{
-    width: 90%;
-} */
 #sub-skill-container{
     align-items: center;
 }
 .grid{
     grid-template-columns: auto auto;
     display: grid;
-    row-gap: 15px;
-    column-gap: 20px;
+    row-gap: 20px;
+    column-gap: 25px;
     justify-content: flex-start;
 }
-.skills div{
-    height: fit-content;
+.skills {
+    column-gap: 35px;
+}
+div nav{
     padding: 5px;
     box-sizing: border-box;
-    width: 100%;
-    cursor: pointer;
-}
-.skills div nav{
     text-decoration-line: underline;
     text-decoration-thickness: 2px;
     text-underline-position: under;
+    cursor: pointer;
+    color: var(--color);
+    opacity: 0.5;
 }
 
 @media screen and (max-width:900px) {

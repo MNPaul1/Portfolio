@@ -62,7 +62,7 @@
   color: var(--color);
   line-height: 1.6;
   font-weight: 600;
-  letter-spacing: 0.7px;
+  letter-spacing: 0.5px;
 }
 .left-container {
   flex: 1 1 55%;

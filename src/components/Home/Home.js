@@ -19,7 +19,7 @@ export const Home = () => {
       </div>
       <div className="right-container center">
         <h1 className="customized-heading-color">Education</h1>
-        <p className="education gradient-border">
+        <p className="gradient-border" id="education">
           - Associate Degree of Science in Computer Science.
           <br />
           3.23/4.3 GPA

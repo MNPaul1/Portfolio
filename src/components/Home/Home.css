@@ -5,36 +5,31 @@
   text-align: left;
   margin: 0;
   padding: 0;
-
 }
 
-.intro-description{
-  width: 95%;
-    border-left: 5px solid;
-    border-image-slice: 10;
-    border-image-source: linear-gradient(
-        90deg,
-        rgba(120, 62, 169, 0.8),
-        rgba(169, 121, 84, 0.8)
-      );
-    padding: 0 5px;
-    box-sizing: border-box;
-
+.intro-description {
+  width: 100%;
+  border-left: 5px solid;
+  border-image-slice: 10;
+  border-image-source: linear-gradient(
+    90deg,
+    rgba(120, 62, 169, 0.8),
+    rgba(169, 121, 84, 0.8)
+  );
+  padding: 0 5px;
+  box-sizing: border-box;
 }
 
-.education{
+#education {
   padding: 5px 5px;
   width: 80%;
   border-left: 5px solid;
   border-top: 5px solid;
-  border-image-slice: 0;
+  border-image-slice: 1;
 }
 
-@media screen and (max-width:900px) {
-  .welcome-heading{
+@media screen and (max-width: 900px) {
+  .welcome-heading {
     font-size: 2.8rem;
-  }
-  .intro-description{
-    width: 100%;
   }
 }

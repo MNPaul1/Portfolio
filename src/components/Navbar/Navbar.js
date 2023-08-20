@@ -53,7 +53,7 @@ export const Navbar = () => {
           to="/home"
           name="nav-item"
           id="home"
-          className={`${"home" === Page ? "active" : ""}`}
+          className={`nav-item ${"home" === Page ? "active" : ""}`}
           onClick={handleClick}
         >
           HOME
@@ -62,7 +62,7 @@ export const Navbar = () => {
           to="skills"
           name="nav-item"
           id="skills"
-          className={`${"skills" === Page ? "active" : ""}`}
+          className={`nav-item ${"skills" === Page ? "active" : ""}`}
           onClick={handleClick}
         >
           SKILLS
@@ -71,7 +71,7 @@ export const Navbar = () => {
           to="projects"
           name="nav-item"
           id="projects"
-          className={`${"projects" === Page ? "active" : ""}`}
+          className={`nav-item ${"projects" === Page ? "active" : ""}`}
           onClick={handleClick}
         >
           PROJECTS
