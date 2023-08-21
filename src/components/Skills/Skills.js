@@ -13,18 +13,18 @@ export const Skills = () => {
     <div className="inner-container skills-container">
       <div className="left-container center" id="sub-skill-container">
         <h2 className="customized-heading-color">{skill}</h2>
-        <div className="skill-level grid">
+        <div className="grid center" id="skill-level">
           {Skills.map(
             (item) =>
               item.name === skill &&
               item.subSkills.map((subSkill, key) => (
-                <div key={key}>{subSkill}</div>
+                <nav key={key}>{subSkill}</nav>
               ))
           )}
         </div>
       </div>
       <div className="right-container center">
-        <h1 className="customized-heading-color">skills</h1>
+        <h1 className="customized-heading-color">expertise</h1>
         <div className="skills grid center">
           {Skills.map((item, key) => (
             <nav

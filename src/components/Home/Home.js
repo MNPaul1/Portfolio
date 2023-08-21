@@ -18,7 +18,7 @@ export const Home = () => {
         </p>
       </div>
       <div className="right-container center">
-        <h1 className="customized-heading-color">Education</h1>
+        <h2 className="customized-heading-color">Education</h2>
         <p className="gradient-border" id="education">
           - Associate Degree of Science in Computer Science.
           <br />

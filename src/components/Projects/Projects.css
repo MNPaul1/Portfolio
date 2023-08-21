@@ -38,7 +38,9 @@
   row-gap: 15px;
   padding-left: 10px;
 }
-
+.projects-container a {
+  color: var(--color);
+}
 @media screen and (max-width: 900px) {
   .card {
     font-size: small;

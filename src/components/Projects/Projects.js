@@ -1,15 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Projects.css";
 import data from "../../data.json";
 import LaunchIcon from '@mui/icons-material/Launch';
+import { Link } from "react-router-dom";
 export const Projects = () => {
   const { projects } = data;
-  const [project, setProject] = useState(projects[0]);
+  const [project, setProject] = useState({
+    name:'', description:'', imgLink:'', link:'',
+  })
+  const {name, description, imgLink} = project||projects[0];
   const handleClick = (e) => {
     const { id } = e.target;
-    setProject(projects.filter((project) => project.name === id)[0]);
+    setProject(projects.filter((item) => item.name === id)[0]);
   };
 
+  useEffect(() =>{
+    setProject(projects[0])
+  },[projects])
   const handleMouseEnter = () => {
     const descriptionElement = document.getElementsByClassName(
       "project-description"
@@ -22,14 +29,13 @@ export const Projects = () => {
     )[0];
     descriptionElement.style.display = "none";
   };
-
   return (
     <div className="inner-container">
       <div className="left-container center">
         <div className="card center">
           <img
-            src={project.imgLink}
-            alt=""
+            src={imgLink}
+            alt={name}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           />
@@ -38,7 +44,7 @@ export const Projects = () => {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <p>{project.description}</p>
+            <p>{description}</p>
           </div>
         </div>
       </div>
@@ -50,9 +56,9 @@ export const Projects = () => {
               key={key}
               onClick={handleClick}
               id={item.name}
-              className={project.name === item.name ? "active" : ""}
+              className={`${name === item.name ? "active" : ""}`}
             >
-              {item.name} <LaunchIcon onClick={() => {window.open(item.link, '_blank'); window.location.reload(false)}} />
+              {item.name} <Link to={item.link} target="_blank" className="center"><LaunchIcon /></Link>
             </nav>
           ))}
         </div>
