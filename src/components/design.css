@@ -87,6 +87,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: capitalize;
+  opacity: 1 !important;
 }
 
 @media screen and (max-width: 900px) {

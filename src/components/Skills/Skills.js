@@ -18,7 +18,7 @@ export const Skills = () => {
             (item) =>
               item.name === skill &&
               item.subSkills.map((subSkill, key) => (
-                <nav key={key}>{subSkill}</nav>
+                <nav key={key} id="sub-skill">{subSkill}</nav>
               ))
           )}
         </div>

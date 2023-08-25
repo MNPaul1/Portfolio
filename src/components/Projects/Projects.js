@@ -8,15 +8,16 @@ export const Projects = () => {
   const [project, setProject] = useState({
     name:'', description:'', imgLink:'', link:'',
   })
+  useEffect(() =>{
+    setProject(projects[0])
+  },[projects])
   const {name, description, imgLink} = project||projects[0];
   const handleClick = (e) => {
     const { id } = e.target;
     setProject(projects.filter((item) => item.name === id)[0]);
   };
 
-  useEffect(() =>{
-    setProject(projects[0])
-  },[projects])
+
   const handleMouseEnter = () => {
     const descriptionElement = document.getElementsByClassName(
       "project-description"

@@ -39,14 +39,24 @@
     position: fixed;
     display: none;
     z-index: 1;
-    background-color: var(--background-color);
+    backdrop-filter: blur(12px);
     opacity: 1;
     height: 100vh;
     right: 0;
+    top: 0;
     box-sizing: border-box;
-    width: 50%;
+    width: 100%;
     flex-direction: column;
     row-gap: 50px;
+    animation: slideIn 0.3s ease;
+  }
+  @keyframes slideIn {
+    0%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(0);
+    }
   }
   #menu,
   #close {

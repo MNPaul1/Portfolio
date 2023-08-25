@@ -8,6 +8,12 @@
 #sub-skill-container{
     align-items: center;
 }
+#sub-skill{
+    text-decoration: none;
+    /* color: white !; */
+    opacity: 1;
+    cursor:auto;
+}
 .grid{
     grid-template-columns: 50% 50%;
     width: 100%;

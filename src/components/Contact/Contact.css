@@ -15,11 +15,13 @@
         width: 100%;
         margin: 100px 0 40px 0;
         padding: unset;
+        font-size: small;
+        justify-content: space-between  ;
     }
     #contact-container p{
         width: 90%;
     }
-    .credit{
+    /* .credit{
         bottom: 155px;
-    }
+    } */
 }
